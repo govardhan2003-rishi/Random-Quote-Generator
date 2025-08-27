@@ -1,0 +1,124 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(240, 181, 181, 0.1);
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+input,
+button {
+  font-size: 1em;
+  padding: 10px;
+  margin-top: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #1b40e37a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+button:hover {
+  background-color: #b1b6e5ce;
+}
+
+.quote-box {
+  border-left: 10px solid #7fd9106f;
+  padding: 10px 20px;
+  margin: 20px 0;
+  background: #f9f9f9;
+  border-radius: 5px;
+}
+
+.fav-quote {
+  position: relative;
+  background: #f0f0ff;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 0.95em;
+}
+
+/* Quote text takes full space except where button sits */
+.quote-text {
+  margin: 0;
+  padding-right: 80px; /* To avoid text overlapping with button */
+  word-wrap: break-word;
+}
+
+/* Styled like small-btn and placed at top-right */
+.small-remove-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 3px 6px;
+  font-size: 0.8em;
+  background-color: #cc0a0a7a;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  inline-size: auto;
+}
+
+.small-remove-btn:hover {
+  background-color: #e80b0bfb;
+}
+
+/* Small buttons below quote box */
+.quote-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.small-btn {
+  padding: 6px 12px;
+  font-size: 0.8em;
+  background-color: #1b40e37a;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  width: auto;
+}
+
+.small-btn:hover {
+  background-color: #b1b6e5ce;
+}
+
+/* Logout button */
+button.logout-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 0.75em;
+  padding: 6px 12px;
+  width: auto;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button.logout-btn:hover {
+  background-color: #c0392b;
+}
